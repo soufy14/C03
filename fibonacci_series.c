@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, t1 = 0, t2 = 1, temp;
+    int n, t1 = 0, t2 = 1;
     scanf("%d", &n);
     if (n < 0) {
         printf("Erreur.\n");
@@ -9,9 +9,12 @@ int main() {
     }
     while (t1 <= n){
         printf("%d ", t1);
-        temp = t1 + t2;
-        t1 = t2;
-        t2 = temp;
+        t2 = t1 + t2;
+        t1 = t2 - t1;
+
+        //temp = t1 + t2;
+       // t1 = t2;
+       // t2 = temp;
     }
     printf("\n");
     return 0;
