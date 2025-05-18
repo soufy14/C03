@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int n, i;
-    long t1 = 0, t2 = 1;
+    int n, a = 0, b = 1, temp;
     // initialiser les deux premiers termes de la série de Fibonacci 
     scanf("%d", &n);
     
-    for (i = 1; i <= n; i++) {
-        printf("%ld ", t1);
-        // affichier les termes de la série de Fibonacci 
-        t2 = t1 + t2;
-        t1 = t2 - t1;
+    while (a <= n){
+        printf("%d ", a);
+        temp = a + b;
+        a = b;
+        b = temp;
     }
     printf("\n");
     return 0;
