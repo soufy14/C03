@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n, a = 0, b = 1, temp;
+    int n, t1 = 0, t2 = 1, temp;
     scanf("%d", &n);
-    
-    while (a <= n){
-        printf("%d", a);
-        temp = a + b;
-        a = b;
-        b = temp;
+    if (n < 0) {
+        printf("Erreur.\n");
+        return 1;
+    }
+    while (t1 <= n){
+        printf("%d ", t1);
+        temp = t1 + t2;
+        t1 = t2;
+        t2 = temp;
     }
     printf("\n");
     return 0;
