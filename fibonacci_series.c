@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() {
     int n, i;
@@ -9,7 +8,7 @@ int main() {
         printf("Erreur.\n");
         return 1;
     }
-    for (i = 1; i <= n; (i++)) {
+    for (i = 1; i <= n; i++) {
         printf("%lld ", t1);
         temp = t1 + t2;
         t1 = t2;
@@ -18,3 +17,4 @@ int main() {
     printf("\n");
     return 0;
 }
+// c'est programme affiche  la série de Fibonacci jusqu'à une valeur limite donnée.
