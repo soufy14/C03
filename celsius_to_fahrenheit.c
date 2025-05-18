@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 
 int main() {
     float celsius, fahrenheit;
@@ -8,7 +8,7 @@ int main() {
     // Conversion Celsius -> Fahrenheit
     fahrenheit = (celsius * 9 / 5) + 32;
 
-    printf("%.1f °C équivaut à %.1f °F\n", celsius, fahrenheit);
+    printf("%.1f°C équivaut à %.1f°F\n", celsius, fahrenheit);
 
     return 0;
 }
