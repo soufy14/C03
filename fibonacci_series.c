@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int n, t1 = 0, t2 = 1;
-    scanf("%d", &n);
-    
-    while (t1 <= n){
-       printf("%d ", t1);
-        t2 = t1 + t2;
-        t1 = t2 - t1;
+    int limite;
+    int a = 0, b = 1, next;
+
+    // Lire la limite depuis l'utilisateur
+    scanf("%d", &limite);
+
+    // Afficher la suite tant que a est inférieur ou égal à la limite
+    while (a <= limite) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
     }
-        //temp = t1 + t2;
-       // t1 = t2;
-       // t2 = temp;
-    
+
     printf("\n");
     return 0;
 }
+
 // c'est programme affiche  la série de Fibonacci jusqu'à une valeur limite donnée.
