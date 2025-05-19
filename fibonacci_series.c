@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int limite;
+    int n;
     int a = 0, b = 1, next;
 
-    // Lire la limite depuis l'utilisateur
-    scanf("%d", &limite);
+    scanf("%d", &n);
 
-    // Afficher la suite tant que a est inférieur ou égal à la limite
-    while (a <= limite) {
-        printf("%d ", a);
+    if ( a <= 9) {
+
+    }
+    while (a <= n) {
+        printf("%d", a);
         next = a + b;
         a = b;
         b = next;
