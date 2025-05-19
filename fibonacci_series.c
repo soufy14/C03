@@ -2,21 +2,24 @@
 
 int main() {
     int n;
-    int a = 0, b = 1, next;
+    int a = 0, b = 1, temp;
 
     scanf("%d", &n);
-
-    if ( a <= 9) {
-
+    if (n > 20 || n < 1) {
+        printf("n doit etre:1 a 20\n");
+        return 1;
     }
+
     while (a <= n) {
-        printf("%d", a);
-        next = a + b;
+        printf("%d ", a);
+        temp = a + b;
         a = b;
-        b = next;
+        b = temp;
+
     }
 
     printf("\n");
+    
     return 0;
 }
 
