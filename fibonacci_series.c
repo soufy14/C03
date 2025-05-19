@@ -3,19 +3,16 @@
 int main() {
     int n, t1 = 0, t2 = 1;
     scanf("%d", &n);
-    if (n < 0) {
-        printf("Erreur.\n");
-        return 1;
-    }
+    
     while (t1 <= n){
-        printf("%d ", t1);
+       printf("%d ", t1);
         t2 = t1 + t2;
         t1 = t2 - t1;
-
+    }
         //temp = t1 + t2;
        // t1 = t2;
        // t2 = temp;
-    }
+    
     printf("\n");
     return 0;
 }
