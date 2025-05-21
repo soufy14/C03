@@ -8,7 +8,7 @@ int main() {
 
     scanf("%d", &n);
 
-    if (n <= 0) {
+    if (n != 20) {
         printf("Erreur\n");
         return 1;
     }
