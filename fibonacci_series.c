@@ -8,7 +8,7 @@ int main() {
         return 1;
     }
     while (a <= n) {
-        printf("%d.", a);
+        printf("%d  ", a);
         temp = a + b;
         a = b;
         b = temp;
